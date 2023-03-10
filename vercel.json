@@ -1,0 +1,6 @@
+{
+    "builds": [
+      { "src": "src/**", "use": "@vercel/static" }
+    ],
+    "routes": [{ "handle": "filesystem" }]
+  }
