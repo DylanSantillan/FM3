@@ -1,0 +1,81 @@
+@use 'variables' as var;
+@use 'mixins' as mix;
+
+/* ------- GENERAL ------- */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var.$fraunces;
+    color: var.$white;
+}
+
+/* ------- HEADER ------- */
+
+.header{
+    background-image: url(./../images/mobile/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 4rem 2.5rem;
+}
+
+.menu-list{
+
+    display: none;
+    
+    &__item{
+        
+    }
+}
+
+.nav{
+
+    @include mix.flex(row, space-between, center);
+    
+    &__logo{
+        height: 3rem;
+    }
+    
+    &__icon-hamburger{
+        height: 3rem;
+    }
+}
+
+.block-center{
+    
+    @include mix.flex(column, center, center);
+    height: 80%;
+
+    &__title{
+        font-size: 4.5rem;
+        text-align: center;
+        letter-spacing: .5rem;
+        margin-top: 7rem;
+    }
+
+    &__icon-arrow{
+        animation: arrow 1s ease-in-out infinite alternate;
+    }    
+}
+
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
