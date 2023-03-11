@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
@@ -11,6 +10,7 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+  
   <header class="header">
     <nav class="nav">
       <img class="nav__logo" src="images/logo.svg" alt="Company logo">
@@ -18,7 +18,7 @@
         <li class="menu-list__item">About</li>
         <li class="menu-list__item">Services</li>
         <li class="menu-list__item">Projects</li>
-        <li class="menu-list__item">Contact</li>
+        <li class="menu-list__item"><a class="menu-list__item--contact" href="https://github.com/DylanSantillan" target="_blank">CONTACT</a></li>
       </ul>
       <img class="nav__icon-hamburger" src="images/icon-hamburger.svg" alt="Navigation menu">
     </nav>
@@ -28,25 +28,42 @@
     </div>
   </header>
 
+  <main class="main">
+    <section class="section-grid">
+      <article class="section-grid__image section-grid__image--egg"></article>
 
-  Transform your brand
+      <article class="article-info article-info--yellow">
+        <h2 class="article-info__title">Transform your brand</h2>
+        <p class="article-info__paragraph">We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <button class="article-info__more article-info__more--yellow">LEARN MORE</button>
+      </article>
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+      <article class="section-grid__image section-grid__image--glass"></article>
 
-  Learn more
+      <article class="article-info">
+        <h2 class="article-info__title">Stand out to the right audience</h2>
+        <p class="article-info__paragraph">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+        <button class="article-info__more article-info__more--red">LEARN MORE</button>
+      </article>
 
-  Stand out to the right audience
+      <article class="bg-article-info bg-article-info--cherry">
+        <h3 class="bg-article-info__title bg-article-info__title--cherry">Graphic design</h3>
+        <p class="bg-article-info__paragraph bg-article-info__paragraph--cherry">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </article>
+      
+      <article class="bg-article-info bg-article-info--orange">
+        <h3 class="bg-article-info__title bg-article-info__title--orange">Photography</h3>
+        <p class="bg-article-info__paragraph bg-article-info__paragraph--orange">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </article> 
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+    </section>
+  </main>
 
-  Learn more
+  
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+  
+  
 
   Client testimonials
 
@@ -66,10 +83,5 @@
   Services
   Projects
   Contact
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>

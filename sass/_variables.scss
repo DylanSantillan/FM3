@@ -1,12 +1,19 @@
 /* -------- COLORS -------- */
-$strong-cyan: hsl(172, 67%, 45%);
-$very-dark-cyan: hsl(183, 100%, 15%);
-$dark-grayish-cyan: hsl(186, 14%, 43%);
-$grayish-cyan: hsl(184, 14%, 56%);
-$light-grayish-cyan: hsl(185, 41%, 84%);
-$very-light-grayish-cyan: hsla(172, 67%, 45%, 0.284);
+// primary
+$soft-red: hsl(7, 99%, 70%);
+$soft-red-transparent: hsl(7, 99%, 70%, 0.30);
+$yellow: hsl(51, 100%, 49%);
+$yellow-transparent: hsl(51, 100%, 49%, 0.30);
+$dark-desaturated-cyan: hsl(167, 40%, 24%);
+$dark-blue: hsl(198, 62%, 26%);
+$dark-moderate-cyan: hsl(168, 34%, 41%);
+// neutral
+$very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$very-dark-grayish-blue: hsl(213, 9%, 39%);
+$dark-grayish-blue: hsl(232, 10%, 55%);
+$grayish-blue: hsl(210, 4%, 67%);
+$white-transparent: hsla(0, 0%, 100%, 0.30);
 $white: hsl(0, 0%, 100%);
-$red: hsl(345, 81%, 42%);
 
 /* -------- FONT -------- */
 $barlow: 'Barlow', sans-serif;
