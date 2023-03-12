@@ -245,7 +245,7 @@ body{
     background-size: cover;
     height: 100vh;
     padding: 0 2rem;
-
+    
     @include mix.responsive(lg){
         padding: 0 10rem;
         height: auto;
@@ -253,7 +253,7 @@ body{
     
     &--cherry{
         background-image: url(./../images/mobile/image-graphic-design.jpg);
-
+        
         @include mix.responsive(md){
             background-image: url(./../images/desktop/image-graphic-design.jpg);
         }
@@ -261,7 +261,7 @@ body{
     
     &--orange{
         background-image: url(./../images/mobile/image-photography.jpg);
-
+        
         @include mix.responsive(md){
             background-image: url(./../images/desktop/image-photography.jpg);
         }
@@ -270,11 +270,11 @@ body{
     &__title{
         font-size: 3rem;    
         text-align: center;
-
+        
         &--cherry{
             color: var.$dark-desaturated-cyan;
         }
-
+        
         &--orange{
             color: var.$dark-blue;
         }
@@ -286,13 +286,157 @@ body{
         text-align: center;
         padding: 4rem 0 6rem;
         line-height: 3rem;
-
+        
         &--cherry{
             color: var.$dark-desaturated-cyan;
         }
-
+        
         &--orange{
             color: var.$dark-blue;
+        }
+    }
+}
+
+/* ------- TESTIMONIALS ------- */
+
+.testimonials{
+    
+    @include mix.flex(column, center, center);
+    min-height: 100vh;
+    padding: 7rem 2.5rem;
+    
+    
+    &__title{
+        color: var.$grayish-blue;
+        text-align: center;
+        font-size: 2.4rem;
+        margin-bottom: 7rem
+    }
+}
+
+.container-testimonials{
+    @include mix.responsive(lg){
+        max-width: 110rem;
+        display: flex;
+        gap: 5rem
+    }
+}
+
+.article-testimonials{
+    @include mix.flex(column, center, center);
+    margin-bottom: 7rem;
+    
+    &__photo{
+        border-radius: 50%;
+        width: 8rem;
+    }
+    &__paragraph{
+        color: var.$dark-grayish-blue;
+        font-family: var.$barlow;
+        text-align: center;
+        font-size: 2rem;
+        margin: 4rem 0 4rem 0;
+        line-height: 3rem;
+    }
+    &__name{
+        color: var.$very-dark-desaturated-blue;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    &__work{
+        color: var.$grayish-blue;
+        font-family: var.$barlow;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+/* ------- TESTIMONIALS ------- */
+
+.footer{
+    
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+    @include mix.responsive(lg){
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    
+    &__images{
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 25rem;
+    }
+    
+    &__images--milk{
+        background-image: url(./../images/mobile/image-gallery-milkbottles.jpg);
+        
+        @include mix.responsive(lg){
+            background-image: url(./../images/desktop/image-gallery-milkbottles.jpg);
+        }
+    }
+    &__images--orange{
+        background-image: url(./../images/mobile/image-gallery-orange.jpg);
+        
+        @include mix.responsive(lg){
+            background-image: url(./../images/desktop/image-gallery-orange.jpg);
+        }
+    }
+    &__images--cone{
+        background-image: url(./../images/mobile/image-gallery-cone.jpg);
+        
+        @include mix.responsive(lg){
+            background-image: url(./../images/desktop/image-gallery-cone.jpg);
+        }
+    }
+    &__images--sugar{
+        background-image: url(./../images/mobile/image-gallery-sugar-cubes.jpg);
+        
+        @include mix.responsive(lg){
+            background-image: url(./../images/desktop/image-gallery-sugarcubes.jpg);
+        }
+    }
+}
+
+.footer-contact{
+    
+    background-color: var.$dark-moderate-cyan;
+    @include mix.flex(column, center, center);
+    padding: 7rem 5rem;
+    
+    &__title{
+        margin-bottom: 5rem;
+    }
+}
+
+.footer-nav{
+    @include mix.flex(row, center, center);
+    
+    &__item{
+        margin-bottom: 7rem;
+        font-family: var.$barlow;
+        font-size: 1.7rem;
+        margin-left: 3rem;
+        cursor: pointer;
+    }
+}
+
+.container-social{
+    &__logo{
+        width: 2.5rem;
+        margin-left: 2rem;
+        cursor: pointer;
+        transition: transform .3s linear;
+
+        &:hover{
+            transform: scale(1.2);
         }
     }
 }

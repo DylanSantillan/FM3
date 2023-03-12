@@ -295,6 +295,149 @@ body {
   color: hsl(198, 62%, 26%);
 }
 
+/* ------- TESTIMONIALS ------- */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 7rem 2.5rem;
+}
+.testimonials__title {
+  color: hsl(210, 4%, 67%);
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 7rem;
+}
+
+@media (min-width: 880px) {
+  .container-testimonials {
+    max-width: 110rem;
+    display: flex;
+    gap: 5rem;
+  }
+}
+
+.article-testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+.article-testimonials__photo {
+  border-radius: 50%;
+  width: 8rem;
+}
+.article-testimonials__paragraph {
+  color: hsl(232, 10%, 55%);
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin: 4rem 0 4rem 0;
+  line-height: 3rem;
+}
+.article-testimonials__name {
+  color: hsl(212, 27%, 19%);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.article-testimonials__work {
+  color: hsl(210, 4%, 67%);
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* ------- TESTIMONIALS ------- */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+@media (min-width: 880px) {
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+.footer-grid__images {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 25rem;
+}
+.footer-grid__images--milk {
+  background-image: url(./../images/mobile/image-gallery-milkbottles.jpg);
+}
+@media (min-width: 880px) {
+  .footer-grid__images--milk {
+    background-image: url(./../images/desktop/image-gallery-milkbottles.jpg);
+  }
+}
+.footer-grid__images--orange {
+  background-image: url(./../images/mobile/image-gallery-orange.jpg);
+}
+@media (min-width: 880px) {
+  .footer-grid__images--orange {
+    background-image: url(./../images/desktop/image-gallery-orange.jpg);
+  }
+}
+.footer-grid__images--cone {
+  background-image: url(./../images/mobile/image-gallery-cone.jpg);
+}
+@media (min-width: 880px) {
+  .footer-grid__images--cone {
+    background-image: url(./../images/desktop/image-gallery-cone.jpg);
+  }
+}
+.footer-grid__images--sugar {
+  background-image: url(./../images/mobile/image-gallery-sugar-cubes.jpg);
+}
+@media (min-width: 880px) {
+  .footer-grid__images--sugar {
+    background-image: url(./../images/desktop/image-gallery-sugarcubes.jpg);
+  }
+}
+
+.footer-contact {
+  background-color: hsl(168, 34%, 41%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 5rem;
+}
+.footer-contact__title {
+  margin-bottom: 5rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer-nav__item {
+  margin-bottom: 7rem;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.7rem;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.container-social__logo {
+  width: 2.5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s linear;
+}
+.container-social__logo:hover {
+  transform: scale(1.2);
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
